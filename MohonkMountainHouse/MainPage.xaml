@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page 
     x:Class="MohonkMountainHouse.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -8,7 +8,31 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <!--TODO
+    Golf Button - choice between route and then send data to that golf page
+    Hiking - choice between routes and then send data to that golf page-->
 
-    </Grid>
+    <Viewbox Stretch="Uniform">
+        <Grid Width="1080" Height="1920">
+            <Image x:Name="backgroundImageBox" Source="Assets\background.png" HorizontalAlignment="Center" Height="2027" VerticalAlignment="Center" Width="1156" FocusVisualPrimaryBrush="{x:Null}" />
+            <Image x:Name="logoImageBox" HorizontalAlignment="Center" Height="455" Margin="0,89,0,0" VerticalAlignment="Top" Width="792" Source="/Assets/Mohonk_Mountain_House_Logo.png"/>
+            <Button x:Name="websitePageButton" Content="Website" Margin="105,1411,0,0" VerticalAlignment="Top" Height="302" Width="409" FontFamily="Felix Titling" FontSize="48" BorderBrush="#FFD3D4B5" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="websitePageButton_Click"/>
+            <Button x:Name="golfPageButton" Content="Golf" Margin="0,488,0,0" VerticalAlignment="Top" Height="303" Width="870" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="72" FontWeight="Bold" CornerRadius="25,25,25,25" HorizontalAlignment="Center" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="golfPageButton_Click"/>
+            <Button x:Name="trailsPageButton" Content="Trails" Margin="0,842,0,0" VerticalAlignment="Top" Height="308" Width="870" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="72" FontWeight="Bold" CornerRadius="25,25,25,25" HorizontalAlignment="Center" Background="#FFFEFAE0" BorderThickness="15,15,15,15" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="trailsPageButton_Click"/>
+            <Button x:Name="menuPageButton" Content="Menu" Margin="566,1411,0,0" VerticalAlignment="Top" Height="302" Width="409" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="menuPageButton_Click"/>
+            <Button x:Name="directionsPageButton" Content="Directions" Margin="0,1204,0,0" VerticalAlignment="Top" Height="157" Width="870" BorderBrush="#FFD3D4B5" Foreground="White" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" HorizontalAlignment="Center" BorderThickness="15,15,15,15" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="#FF545632" Click="directionsPageButton_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF545632" Offset="0.771"/>
+                        <GradientStop Color="#FFFEFAE0" Offset="0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Margin="10,1780,0,0" TextWrapping="Wrap" Text="© Caleb Herrera 2025" VerticalAlignment="Top" Height="46" Width="1065" FontSize="36" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="White" Opacity="0.65"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </Grid>
+    </Viewbox>
 </Page>
