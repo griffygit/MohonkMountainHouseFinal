@@ -26,7 +26,7 @@
                             <GradientStop Color="#FFD3D4B5" Offset="1"/>
                         </LinearGradientBrush>
                     </StackPanel.Background>
-                    <TextBlock Text="Golf Scorecard - Course A" FontFamily="Felix Titling" FontSize="40" FontWeight="Bold" Foreground="#FFD3D4B5" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Golf Scorecard - 9 Holes" FontFamily="Felix Titling" FontSize="40" FontWeight="Bold" Foreground="#FFD3D4B5" HorizontalAlignment="Center"/>
                     <Grid Width="841">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*" />
