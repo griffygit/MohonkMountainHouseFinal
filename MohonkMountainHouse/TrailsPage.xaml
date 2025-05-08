@@ -11,13 +11,16 @@
     <Viewbox Stretch="Uniform">
         <Grid Width="1080" Height="1920">
             <Image x:Name="backgroundImageBox" Source="Assets\background.png" HorizontalAlignment="Center" Height="2027" VerticalAlignment="Center" Width="1156" FocusVisualPrimaryBrush="{x:Null}" />
-            <Button x:Name="emptyPageButton" Content="Empty" Margin="0,525,0,0" VerticalAlignment="Top" Height="436" Width="515" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="72" FontWeight="Bold" CornerRadius="25,25,25,25" HorizontalAlignment="Center" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White"/>
-            <Button x:Name="goBackButton" Content="Back to Home" Margin="0,1077,0,0" VerticalAlignment="Top" Height="193" Width="725" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" HorizontalAlignment="Center" Click="goBackButton_Click"/>
+            <Button x:Name="easyTrailButton" Content="Easy Trail" Margin="0,483,0,0" VerticalAlignment="Top" Height="256" Width="767" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="72" FontWeight="Bold" CornerRadius="25,25,25,25" HorizontalAlignment="Center" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="easyTrailButton_Click"/>
+            <Button x:Name="goBackButton" Content="⬅️" Margin="217,169,0,0" VerticalAlignment="Top" Height="151" Width="183" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="95" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="goBackButton_Click"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,1780,0,0" TextWrapping="Wrap" Text="© Caleb Herrera 2025" VerticalAlignment="Top" Height="46" Width="1065" FontSize="36" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
                 <TextBlock.Foreground>
                     <SolidColorBrush Color="White" Opacity="0.65"/>
                 </TextBlock.Foreground>
             </TextBlock>
+            <TextBlock x:Name="titleBlock" HorizontalAlignment="Left" Margin="425,192,0,0" TextWrapping="Wrap" Text="Trails" VerticalAlignment="Top" Width="360" Height="107" FontSize="90" FontFamily="Felix Titling" Foreground="#FF545632" FontWeight="Bold" FocusVisualPrimaryBrush="#FF858485" TextAlignment="Center" RenderTransformOrigin="0.686,0.449"/>
+            <Button x:Name="mediumTrailButton" Content="Medium Trail" Margin="0,856,0,0" VerticalAlignment="Top" Height="256" Width="767" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="72" FontWeight="Bold" CornerRadius="25,25,25,25" HorizontalAlignment="Center" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="mediumTrailButton_Click"/>
+            <Button x:Name="hardTrailButton" Content="Hard Trail" Margin="0,1246,0,0" VerticalAlignment="Top" Height="256" Width="767" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="72" FontWeight="Bold" CornerRadius="25,25,25,25" HorizontalAlignment="Center" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="hardTrailButton_Click"/>
         </Grid>
     </Viewbox>
 </Page>

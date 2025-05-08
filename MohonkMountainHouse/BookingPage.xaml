@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="MohonkMountainHouse.BookingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MohonkMountainHouse"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Viewbox Stretch="Uniform">
+        <Grid Width="1080" Height="1920">
+            <Image x:Name="backgroundImageBox" Source="Assets\background.png" HorizontalAlignment="Center" Height="2027" VerticalAlignment="Center" Width="1156" FocusVisualPrimaryBrush="{x:Null}" />
+            <Image x:Name="logoImageBox" HorizontalAlignment="Left" Height="193" Margin="356,404,0,0" VerticalAlignment="Top" Width="373" Source="/Assets/Mohonk_Mountain_House_Logo.png"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,1738,0,0" TextWrapping="Wrap" Text="© Caleb Herrera 2025" VerticalAlignment="Top" Height="46" Width="1065" FontSize="36" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="White" Opacity="0.65"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock Text="Select Reservation Dates" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Left" Margin="140,597,0,1263" Width="794" TextAlignment="Center"/>
+
+            <Button x:Name="goBackButton" Content="⬅️" Margin="32,28,0,0" VerticalAlignment="Top" Height="100" Width="129" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="goBackButton_Click"/>
+            <CalendarDatePicker x:Name="startDatePicker" Header="Start Date" Margin="0,700,0,0" VerticalAlignment="Top" Height="225" Width="836" Foreground="#FFD3D4B5" FontSize="48" FontFamily="Felix Titling" HorizontalAlignment="Center" BorderBrush="#FFD3D4B5" BorderThickness="15,15,15,15" />
+            <CalendarDatePicker x:Name="endDatePicker" Header="End Date" Margin="0,981,0,0" VerticalAlignment="Top" Height="225" Width="836" Foreground="#FFD3D4B5" FontSize="48" FontFamily="Felix Titling" HorizontalAlignment="Center" BorderBrush="#FFD3D4B5" BorderThickness="15,15,15,15" />
+            <Button x:Name="reserveButton" Content="Reserve" Margin="0,1291,0,0" VerticalAlignment="Top" Height="130" Width="531" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="reserveButton_Click" HorizontalAlignment="Center" Foreground="#FFD3D4B5"/>
+        </Grid>
+    </Viewbox>
+</Page>

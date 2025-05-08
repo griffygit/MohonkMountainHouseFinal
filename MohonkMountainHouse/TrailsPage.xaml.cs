@@ -31,5 +31,20 @@ namespace MohonkMountainHouse
         {
             Frame.Navigate(typeof(MainPage));
         }
+
+        private void easyTrailButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(EasyTrailPage));
+        }
+
+        private void mediumTrailButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MediumTrailPage));
+        }
+
+        private void hardTrailButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(HardTrailPage));
+        }
     }
 }

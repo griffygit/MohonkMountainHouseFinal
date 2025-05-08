@@ -25,11 +25,42 @@ namespace MohonkMountainHouse
         public WebsitePage()
         {
             this.InitializeComponent();
+            mohonkWebview.Navigate(new Uri("https://linktr.ee/mohonkmountainhouse"));
         }
 
         private void goBackButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
+        }
+
+        private void mohonkWebview_LoadCompleted(object sender, NavigationEventArgs e)
+        {
+            
+        }
+
+        private void emptyButtonClick()
+        {
+
+        }
+
+        private void igButton_Click(object sender, RoutedEventArgs e)
+        {
+            mohonkWebview.Navigate(new Uri("https://www.instagram.com/mohonkmountainhouse"));
+        }
+
+        private void websiteButton_Click(object sender, RoutedEventArgs e)
+        {
+            mohonkWebview.Navigate(new Uri("https://www.mohonk.com/"));
+        }
+
+        private void fbButton_Click(object sender, RoutedEventArgs e)
+        {
+            mohonkWebview.Navigate(new Uri("https://www.facebook.com/Mohonk"));
+        }
+
+        private void blogButton_Click(object sender, RoutedEventArgs e)
+        {
+            mohonkWebview.Navigate(new Uri("https://www.mohonk.com/blog/"));
         }
     }
 }

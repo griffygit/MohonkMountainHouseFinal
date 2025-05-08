@@ -11,13 +11,17 @@
     <Viewbox Stretch="Uniform">
         <Grid Width="1080" Height="1920">
             <Image x:Name="backgroundImageBox" Source="Assets\background.png" HorizontalAlignment="Center" Height="2027" VerticalAlignment="Center" Width="1156" FocusVisualPrimaryBrush="{x:Null}" />
-            <Button x:Name="emptyPageButton" Content="Empty" Margin="0,525,0,0" VerticalAlignment="Top" Height="436" Width="515" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="72" FontWeight="Bold" CornerRadius="25,25,25,25" HorizontalAlignment="Center" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White"/>
-            <Button x:Name="goBackButton" Content="Back to Home" Margin="0,1077,0,0" VerticalAlignment="Top" Height="193" Width="725" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" HorizontalAlignment="Center" Click="goBackButton_Click"/>
+            <Button x:Name="websiteButton" Content="Website" Margin="173,1371,0,0" VerticalAlignment="Top" Height="145" Width="336" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="36" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="websiteButton_Click"/>
+            <Button x:Name="goBackButton" Content="⬅️" Margin="32,28,0,0" VerticalAlignment="Top" Height="100" Width="129" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="goBackButton_Click"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,1780,0,0" TextWrapping="Wrap" Text="© Caleb Herrera 2025" VerticalAlignment="Top" Height="46" Width="1065" FontSize="36" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
                 <TextBlock.Foreground>
                     <SolidColorBrush Color="White" Opacity="0.65"/>
                 </TextBlock.Foreground>
             </TextBlock>
+            <Button x:Name="igButton" Content="Instagram" Margin="562,1371,0,0" VerticalAlignment="Top" Height="145" Width="336" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="36" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="igButton_Click"/>
+            <WebView x:Name="mohonkWebview" Margin="64,236,72,620" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="{x:Null}" LoadCompleted="mohonkWebview_LoadCompleted"/>
+            <Button x:Name="facebookButton" Content="Facebook" Margin="173,1569,0,0" VerticalAlignment="Top" Height="145" Width="336" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="36" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="fbButton_Click"/>
+            <Button x:Name="blogButton" Content="Blog" Margin="562,1569,0,0" VerticalAlignment="Top" Height="145" Width="336" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="36" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="blogButton_Click"/>
         </Grid>
     </Viewbox>
 </Page>

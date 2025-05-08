@@ -9,15 +9,58 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Viewbox Stretch="Uniform">
+        <!-- FIRST ITERATION, NO SUPPORT FOR CHOOSING MEALS OR CALCULATING TOTALS, JUST KEPT FOR SAFETY
         <Grid Width="1080" Height="1920">
             <Image x:Name="backgroundImageBox" Source="Assets\background.png" HorizontalAlignment="Center" Height="2027" VerticalAlignment="Center" Width="1156" FocusVisualPrimaryBrush="{x:Null}" />
-            <Button x:Name="emptyPageButton" Content="Empty" Margin="0,525,0,0" VerticalAlignment="Top" Height="436" Width="515" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="72" FontWeight="Bold" CornerRadius="25,25,25,25" HorizontalAlignment="Center" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White"/>
-            <Button x:Name="goBackButton" Content="Back to Home" Margin="0,1077,0,0" VerticalAlignment="Top" Height="193" Width="725" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" HorizontalAlignment="Center" Click="goBackButton_Click"/>
+            <Rectangle Fill="#66000000"/>
+            <Button x:Name="breakfastButton" Content="Breakfast" Margin="90,1343,0,0" VerticalAlignment="Top" Height="121" Width="462" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="45" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="breakfastButton_Click"/>
+            <Button x:Name="goBackButton" Content="⬅️" Margin="32,28,0,0" VerticalAlignment="Top" Height="100" Width="129" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="goBackButton_Click"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,1780,0,0" TextWrapping="Wrap" Text="© Caleb Herrera 2025" VerticalAlignment="Top" Height="46" Width="1065" FontSize="36" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
                 <TextBlock.Foreground>
                     <SolidColorBrush Color="White" Opacity="0.65"/>
                 </TextBlock.Foreground>
             </TextBlock>
+            <Button x:Name="lunchButton" Content="Lunch" Margin="90,1468,0,0" VerticalAlignment="Top" Height="120" Width="462" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="45" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="lunchButton_Click"/>
+            <Button x:Name="dinnerButton" Content="Dinner" Margin="90,1593,0,0" VerticalAlignment="Top" Height="120" Width="462" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="45" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="dinnerButton_Click"/>
+            <TextBlock x:Name="timesTextBlock" HorizontalAlignment="Left" Margin="627,1373,0,0" TextWrapping="Wrap" Text="8AM - 9:30AM" VerticalAlignment="Top" Width="333" Height="71" FontSize="48" FontFamily="Felix Titling" Foreground="#FFFEFAE0" FontWeight="Bold" FocusVisualPrimaryBrush="#FF103156"/>
+            <TextBlock x:Name="timesTextBlock_Copy" HorizontalAlignment="Left" Margin="663,1500,0,0" TextWrapping="Wrap" Text="12PM - 2PM" VerticalAlignment="Top" Width="278" Height="71" FontSize="48" FontFamily="Felix Titling" Foreground="#FFFEFAE0" FontWeight="Bold" FocusVisualPrimaryBrush="#FF103156"/>
+            <TextBlock x:Name="timesTextBlock_Copy1" HorizontalAlignment="Left" Margin="602,1625,0,0" TextWrapping="Wrap" Text="5:30PM - 8:30PM" VerticalAlignment="Top" Width="382" Height="71" FontSize="48" FontFamily="Felix Titling" Foreground="#FFFEFAE0" FontWeight="Bold" FocusVisualPrimaryBrush="#FF103156"/>
+            <TextBlock HorizontalAlignment="Left" Margin="34,1274,0,0" TextWrapping="Wrap" Text="in a full implementation, the time would be checked for the user." VerticalAlignment="Top" Height="46" Width="1001" FontSize="30" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="#FFFEFAE0" Opacity="0.65"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock x:Name="titleBlock" HorizontalAlignment="Left" Margin="153,183,0,0" TextWrapping="Wrap" Text="Main Dining Room" VerticalAlignment="Top" Width="766" Height="71" FontSize="72" FontFamily="Felix Titling" Foreground="#FFFEFAE0" FontWeight="Bold" FocusVisualPrimaryBrush="#FF858485"/>
+            <TextBlock x:Name="menuBox" HorizontalAlignment="Left" Margin="117,377,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="814" Height="691" FontSize="68" FontFamily="Felix Titling" Foreground="#FFFEFAE0" FontWeight="Bold" TextAlignment="Center"/>
+            <TextBlock x:Name="titleBlock_Copy" HorizontalAlignment="Left" Margin="131,267,0,0" TextWrapping="Wrap" Text="Current Offerings" VerticalAlignment="Top" Width="802" Height="71" FontSize="48" FontFamily="Felix Titling" Foreground="#FFE0DFD6" FontWeight="Bold" TextAlignment="Center" FocusVisualPrimaryBrush="#FF858485"/>
         </Grid>
+        -->
+
+        <Grid Width="1080" Height="1920">
+            <Image x:Name="backgroundImageBox" Source="Assets\background.png" HorizontalAlignment="Center" Height="2027" VerticalAlignment="Center" Width="1156" FocusVisualPrimaryBrush="{x:Null}" />
+            <Rectangle Fill="#66000000"/>
+            <Button x:Name="breakfastButton" Content="Breakfast" Margin="90,1343,0,0" VerticalAlignment="Top" Height="121" Width="462" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="45" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="breakfastButton_Click"/>
+            <Button x:Name="goBackButton" Content="⬅️" Margin="32,28,0,0" VerticalAlignment="Top" Height="100" Width="129" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="goBackButton_Click"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,1780,0,0" TextWrapping="Wrap" Text="© Caleb Herrera 2025" VerticalAlignment="Top" Height="46" Width="1065" FontSize="36" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="White" Opacity="0.65"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <Button x:Name="lunchButton" Content="Lunch" Margin="90,1468,0,0" VerticalAlignment="Top" Height="120" Width="462" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="45" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="lunchButton_Click"/>
+            <Button x:Name="dinnerButton" Content="Dinner" Margin="90,1593,0,0" VerticalAlignment="Top" Height="120" Width="462" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="45" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="dinnerButton_Click"/>
+            <TextBlock x:Name="timesTextBlock" HorizontalAlignment="Left" Margin="627,1373,0,0" TextWrapping="Wrap" Text="8AM - 9:30AM" VerticalAlignment="Top" Width="333" Height="71" FontSize="48" FontFamily="Felix Titling" Foreground="#FFFEFAE0" FontWeight="Bold" FocusVisualPrimaryBrush="#FF103156"/>
+            <TextBlock x:Name="timesTextBlock_Copy" HorizontalAlignment="Left" Margin="663,1500,0,0" TextWrapping="Wrap" Text="12PM - 2PM" VerticalAlignment="Top" Width="278" Height="71" FontSize="48" FontFamily="Felix Titling" Foreground="#FFFEFAE0" FontWeight="Bold" FocusVisualPrimaryBrush="#FF103156"/>
+            <TextBlock x:Name="timesTextBlock_Copy1" HorizontalAlignment="Left" Margin="602,1625,0,0" TextWrapping="Wrap" Text="5:30PM - 8:30PM" VerticalAlignment="Top" Width="382" Height="71" FontSize="48" FontFamily="Felix Titling" Foreground="#FFFEFAE0" FontWeight="Bold" FocusVisualPrimaryBrush="#FF103156"/>
+            <TextBlock HorizontalAlignment="Left" Margin="34,1274,0,0" TextWrapping="Wrap" Text="in a full implementation, the time would be checked for the user." VerticalAlignment="Top" Height="46" Width="1001" FontSize="30" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="#FFFEFAE0" Opacity="0.65"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock x:Name="titleBlock" HorizontalAlignment="Left" Margin="153,183,0,0" TextWrapping="Wrap" Text="Main Dining Room" VerticalAlignment="Top" Width="766" Height="71" FontSize="72" FontFamily="Felix Titling" Foreground="#FFFEFAE0" FontWeight="Bold" FocusVisualPrimaryBrush="#FF858485"/>
+            <StackPanel x:Name="menuStackPanel" Margin="167,374,167,0" VerticalAlignment="Top"/>
+            <Button x:Name="submitButton" Content="Submit Order" Click="SubmitOrder_Click" Margin="125,1130,0,0" Width="814" BorderBrush="#FFD3D4B5" Height="121" Background="#FFFEFAE0" FontSize="48" FontFamily="Felix Titling" FontWeight="Bold" Foreground="#FF545632" CornerRadius="25,25,25,25" FocusVisualPrimaryBrush="#FF545632" BorderThickness="15,15,15,15" VerticalAlignment="Top" RenderTransformOrigin="0.514,0.186"/>
+            <TextBlock x:Name="titleBlock_Copy" HorizontalAlignment="Left" Margin="131,267,0,0" TextWrapping="Wrap" Text="Current Offerings" VerticalAlignment="Top" Width="802" Height="71" FontSize="48" FontFamily="Felix Titling" Foreground="#FFE0DFD6" FontWeight="Bold" TextAlignment="Center" FocusVisualPrimaryBrush="#FF858485"/>
+        </Grid>
+
     </Viewbox>
 </Page>

@@ -52,5 +52,10 @@ namespace MohonkMountainHouse
         {
             Frame.Navigate(typeof(MenuPage));
         }
+
+        private void bookingPageButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(BookingPage));
+        }
     }
 }

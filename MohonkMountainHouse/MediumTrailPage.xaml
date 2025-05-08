@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="MohonkMountainHouse.MediumTrailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MohonkMountainHouse"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Viewbox Stretch="Uniform">
+        <Grid Width="1080" Height="1920">
+            <Image x:Name="backgroundImageBox" Source="Assets\background.png" HorizontalAlignment="Center" Height="2027" VerticalAlignment="Center" Width="1156" FocusVisualPrimaryBrush="{x:Null}" />
+            <Button x:Name="goBackButton" Content="⬅️" Margin="32,28,0,0" VerticalAlignment="Top" Height="100" Width="129" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="goBackButton_Click"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,1780,0,0" TextWrapping="Wrap" Text="© Caleb Herrera 2025" VerticalAlignment="Top" Height="46" Width="1065" FontSize="36" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="White" Opacity="0.65"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock x:Name="titleBlock" HorizontalAlignment="Left" Margin="219,119,0,0" TextWrapping="Wrap" Text="Table Rocks" VerticalAlignment="Top" Width="631" Height="96" FontSize="80" FontFamily="Felix Titling" Foreground="#FF545632" FontWeight="Bold" FocusVisualPrimaryBrush="#FF858485" TextAlignment="Center" RenderTransformOrigin="0.501,0.458"/>
+            <Custom:MapControl x:Name="mapBox" Margin="92,576,91,212" Loaded="mapLoaded"/>
+            <HyperlinkButton x:Name="hyperLink" Content="Trail Directions on AllTrails" Margin="0,289,0,0" VerticalAlignment="Top" Height="64" Width="801" HorizontalAlignment="Center" Foreground="#FF545632" FontSize="36" NavigateUri="https://www.alltrails.com/trail/us/new-york/table-rocks-trail"/>
+            <TextBlock x:Name="titleBlock_Copy" HorizontalAlignment="Center" Margin="0,228,0,0" TextWrapping="Wrap" Text="3.3 Mi - 449 ft Elevation Gain" VerticalAlignment="Top" Width="897" Height="60" FontSize="48" FontFamily="Felix Titling" Foreground="#FF545632" FontWeight="Bold" FocusVisualPrimaryBrush="#FF858485" TextAlignment="Center" RenderTransformOrigin="0.686,0.449"/>
+            <Button x:Name="pictureButton" Content="Send us a picture of you on the trail!" Margin="0,373,0,0" VerticalAlignment="Top" Height="156" Width="642" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="24" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="pictureButton_Click" HorizontalAlignment="Center"/>
+        </Grid>
+    </Viewbox>
+</Page>

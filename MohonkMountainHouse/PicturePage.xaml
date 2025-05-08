@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="MohonkMountainHouse.PicturePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MohonkMountainHouse"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Viewbox Stretch="Uniform">
+            <Grid Width="1080" Height="1920">
+                <Image x:Name="backgroundImageBox" Source="Assets\background.png" HorizontalAlignment="Center" Height="2027" VerticalAlignment="Center" Width="1156" FocusVisualPrimaryBrush="{x:Null}" />
+                <Rectangle Fill="#66000000"/>
+                <Button x:Name="goBackButton" Content="Back to Your Trail" Margin="0,1464,0,0" VerticalAlignment="Top" Height="193" Width="725" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" HorizontalAlignment="Center" Click="goBackButton_Click"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,1780,0,0" TextWrapping="Wrap" Text="© Caleb Herrera 2025" VerticalAlignment="Top" Height="46" Width="1065" FontSize="36" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="White" Opacity="0.65"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+                <Button x:Name="captureButton" Content="Capture" Margin="0,1256,0,0" VerticalAlignment="Top" Height="120" Width="462" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="45" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Click="captureButton_Click" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="titleBlock" HorizontalAlignment="Left" Margin="162,171,0,0" TextWrapping="Wrap" Text="Send us a Picture !" VerticalAlignment="Top" Width="766" Height="71" FontSize="72" FontFamily="Felix Titling" Foreground="#FFFEFAE0" FontWeight="Bold" FocusVisualPrimaryBrush="#FF858485" TextAlignment="Center"/>
+                <TextBlock x:Name="titleBlock_Copy" HorizontalAlignment="Center" Margin="0,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="802" Height="108" FontSize="48" FontFamily="Felix Titling" Foreground="#FFE0DFD6" FontWeight="Bold" TextAlignment="Center" FocusVisualPrimaryBrush="#FF858485"><Run Text="To Possibly be featured "/><LineBreak/><Run Text="on our newsletter"/></TextBlock>
+                <Image x:Name="imgBox" HorizontalAlignment="Center" Height="726" Margin="0,491,0,0" VerticalAlignment="Top" Width="775"/>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Page>

@@ -11,13 +11,49 @@
     <Viewbox Stretch="Uniform">
         <Grid Width="1080" Height="1920">
             <Image x:Name="backgroundImageBox" Source="Assets\background.png" HorizontalAlignment="Center" Height="2027" VerticalAlignment="Center" Width="1156" FocusVisualPrimaryBrush="{x:Null}" />
-            <Button x:Name="emptyPageButton" Content="Empty" Margin="0,525,0,0" VerticalAlignment="Top" Height="436" Width="515" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="72" FontWeight="Bold" CornerRadius="25,25,25,25" HorizontalAlignment="Center" BorderThickness="15,15,15,15" Background="#FFFEFAE0" Foreground="#FF545632" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White"/>
-            <Button x:Name="goBackButton" Content="Back to Home" Margin="0,1077,0,0" VerticalAlignment="Top" Height="193" Width="725" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" HorizontalAlignment="Center" Click="goBackButton_Click"/>
+            <Button x:Name="goBackButton" Content="⬅️" Margin="32,28,0,0" VerticalAlignment="Top" Height="100" Width="129" BorderBrush="#FFD3D4B5" FontFamily="Felix Titling" FontSize="48" FontWeight="Bold" CornerRadius="25,25,25,25" BorderThickness="15,15,15,15" FocusVisualPrimaryBrush="#FF545632" FocusVisualSecondaryBrush="White" Background="#FF545632" Click="goBackButton_Click"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,1780,0,0" TextWrapping="Wrap" Text="© Caleb Herrera 2025" VerticalAlignment="Top" Height="46" Width="1065" FontSize="36" TextAlignment="Center" FontFamily="Microsoft JhengHei Light">
                 <TextBlock.Foreground>
                     <SolidColorBrush Color="White" Opacity="0.65"/>
                 </TextBlock.Foreground>
             </TextBlock>
+
+            <ScrollViewer Margin="73,188,73,187">
+                <StackPanel Padding="30" Spacing="20" CornerRadius="15,15,15,15" Height="1341">
+                    <StackPanel.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF545632" Offset="0.367"/>
+                            <GradientStop Color="#FFD3D4B5" Offset="1"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                    <TextBlock Text="Golf Scorecard - Course A" FontFamily="Felix Titling" FontSize="40" FontWeight="Bold" Foreground="#FFD3D4B5" HorizontalAlignment="Center"/>
+                    <Grid Width="841">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <!-- Hole -->
+                            <ColumnDefinition Width="1*" />
+                            <!-- Par -->
+                            <ColumnDefinition Width="1*" />
+                            <!-- Score -->
+                            <ColumnDefinition Width="1*" />
+                            <!-- Putts -->
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Hole" FontWeight="Bold" Grid.Column="0" FontSize="25" />
+                        <TextBlock Text="Par" FontWeight="Bold" Grid.Column="1" FontSize="25"/>
+                        <TextBlock Text="Score" FontWeight="Bold" Grid.Column="2" FontSize="25"/>
+                        <TextBlock Text="Putts" FontWeight="Bold" Grid.Column="3" FontSize="25"/>
+                    </Grid>
+
+                    <!-- Score Rows -->
+                    <ItemsControl x:Name="ScoreRows">
+                        <!-- We'll populate this dynamically -->
+                    </ItemsControl>
+
+                    <Button x:Name="finishRoundButton" Content="Finish Round" Margin="0,30,0,0" Click="FinishRound_Click"
+                    Background="#FF545632" Foreground="#FFD3D4B5" FontSize="24" Padding="10" BorderThickness="15,15,15,15" BorderBrush="#FFD3D4B5" CornerRadius="25,25,25,25" Height="118" Width="265" FontFamily="Felix Titling"/>
+                </StackPanel>
+            </ScrollViewer>
+
         </Grid>
     </Viewbox>
 </Page>
